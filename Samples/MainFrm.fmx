@@ -1,0 +1,162 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MessageServiceDemo'
+  ClientHeight = 708
+  ClientWidth = 736
+  Padding.Left = 4.000000000000000000
+  Padding.Top = 4.000000000000000000
+  Padding.Right = 4.000000000000000000
+  Padding.Bottom = 4.000000000000000000
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object MessageMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    Position.X = 4.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 728.000000000000000000
+    Size.Height = 192.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 724.000000000000000000
+    Viewport.Height = 188.000000000000000000
+  end
+  object StringMessageBtn: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'StringMessage'
+    OnClick = StringMessageBtnClick
+  end
+  object Label1: TLabel
+    Align = MostTop
+    StyledSettings = [Family, Size, FontColor]
+    Margins.Left = 4.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 4.000000000000000000
+    Size.Width = 724.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Message'
+    TabOrder = 7
+  end
+  object Button1: TButton
+    Position.X = 328.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'BoolMessage'
+    OnClick = Button1Click
+  end
+  object ArgumentMessageBtn: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'ArgumentMessage'
+    OnClick = ArgumentMessageBtnClick
+  end
+  object TupleMessageBtn: TButton
+    Position.X = 328.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'TupleMessage'
+    OnClick = TupleMessageBtnClick
+  end
+  object GroupBox1: TGroupBox
+    Position.X = 24.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 569.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'IPC'
+    TabOrder = 10
+    object IPCBtn: TButton
+      Position.X = 104.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Enable IPC'
+      OnClick = IPCBtnClick
+    end
+    object ModeComboBox: TComboBox
+      Items.Strings = (
+        'Unknow'
+        'Auto'
+        'Server'
+        'Client')
+      ItemIndex = 1
+      Position.X = 104.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 14
+    end
+    object BroadcastBtn: TButton
+      Position.X = 304.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Broadcast'
+      OnClick = BroadcastBtnClick
+    end
+    object SendButton: TButton
+      Position.X = 304.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Send'
+      OnClick = SendButtonClick
+    end
+    object Label2: TLabel
+      Position.X = 24.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'IPC Mode'
+      TabOrder = 38
+    end
+  end
+  object IdUDPClient1: TIdUDPClient
+    BroadcastEnabled = True
+    Port = 0
+    Left = 384
+    Top = 544
+  end
+  object IdUDPServer1: TIdUDPServer
+    Bindings = <
+      item
+        IP = '192.168.1.7'
+        Port = 10241
+      end>
+    DefaultPort = 0
+    Left = 520
+    Top = 480
+  end
+end

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/10/05 15:42:07.000.083,=C:\Users\41652\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2023/10/05 15:43:01.000.612,E:\MessageService\MainFrm.fmx=C:\Users\41652\Documents\Embarcadero\Studio\Projects\Unit6.fmx</Transaction>
+    <Transaction>2023/10/05 15:43:01.000.612,E:\MessageService\MainFrm.pas=C:\Users\41652\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2023/10/05 15:43:12.000.884,E:\MessageService\MessageServiceDemo.dproj=C:\Users\41652\Documents\Embarcadero\Studio\Projects\Project5.dproj</Transaction>
+    <Transaction>2023/10/05 15:49:28.000.795,=E:\MessageService\VPL.SyncObjs.pas</Transaction>
+    <Transaction>2023/10/05 15:49:28.000.759,=E:\MessageService\VPL.Messaging.pas</Transaction>
+    <Transaction>2023/10/21 09:29:14.000.911,=E:\MessageService\VPL.IPC.pas</Transaction>
+    <Transaction>2023/10/21 09:46:31.000.671,=E:\MessageService\VPL.Messaging.Types.pas</Transaction>
+    <Transaction>2023/10/21 09:48:14.000.980,E:\MessageService\VPL.Messaging.Types.pas=</Transaction>
+    <Transaction>2023/11/05 17:52:33.000.958,E:\MessageService\VPL.SyncObjs.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
